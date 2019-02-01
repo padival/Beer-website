@@ -1,0 +1,251 @@
+    * {
+        padding: 0;
+        margin: 0;
+    }
+
+    html,
+    body {
+        position: relative;
+        width: 100%;
+        max-width: 100%;
+    }
+
+    body {
+        font-family: "Montserrat", Arial, Helvetica, sans-serif;
+        font-size: 16px;
+        color: #4d4d4f;
+        background-color: #ebebe4;
+    }
+
+    ul,
+    li {
+        margin: 0;
+        list-style-type: none;
+        padding: 0
+    }
+
+    .container {
+        position: relative;
+    }
+
+    .input-sm {
+        height: 40px;
+        padding: 8px 12px;
+        font-size: 12px;
+        line-height: 16px;
+        border-radius: 3px;
+    }
+    /******************** Header ****************/
+    /********* PP-stands for pritul padival :D :P ***********/
+
+    .pp-navbar {
+        height: 105px;
+        border-radius: 0;
+        background-color: transparent;
+        position: fixed;
+        width: 100%;
+        margin-bottom: 0;
+        z-index: 999;
+    }
+
+    .pp-navbar.sticky {
+        background-color: rgba(0, 0, 0, .8)
+    }
+
+    .pp-navbar .navbar-header {
+        float: left;
+        margin-left: 0;
+    }
+
+    .pp-navbar .navbar-brand {
+        height: 80px;
+        padding: 0;
+        margin: 10px 0;
+    }
+
+    .pp-navbar .navbar-brand img {
+        height: 100%
+    }
+
+    .pp-navbar .navbar-nav {
+        float: right;
+        margin: 35px 0px;
+    }
+
+    .pp-navbar .navbar-nav li {
+        display: inline-block;
+    }
+
+    .pp-navbar .navbar-nav li a {
+        color: #ffffff;
+        font-size: 14px;
+        padding: 0 0 0 24px;
+        opacity: .9;
+    }
+
+    .pp-navbar .navbar-nav li a:hover,
+    .pp-navbar .navbar-nav li a:focus,
+    .pp-navbar .navbar-nav li a:active {
+        opacity: 1;
+        background-color: transparent;
+        color: #ffffff;
+    }
+    /******************** Header Ends ****************/
+    /******************** Hero Starts ****************/
+
+    .pp-hero {
+        height: 600px;
+        text-align: center;
+        position: relative;
+        background-image: linear-gradient(to bottom, rgba(29, 31, 36, 0.8), rgba(29, 31, 36, 0.8)), url('../images/hero-back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+    }
+
+    .hero-container {
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        max-width: 800px;
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        z-index: 9;
+        padding: 0 15px;
+    }
+
+    .pp-hero h1 {
+        font-size: 40px;
+        color: #ffffff;
+        margin-bottom: 40px;
+        line-height: 60px;
+        font-weight: bold;
+        font-family: 'Kaushan Script', cursive;
+
+    }
+
+    .pp-hero .form-group {
+        position: relative;
+    }
+
+    .pp-hero .form-group input,
+    .pp-hero .form-group .btn {
+        display: inline-block;
+    }
+
+    .pp-hero .form-group .form-control {
+        width: 79%
+    }
+
+    .pp-hero .form-group .btn {
+        width: 20%;
+        height: 40px;
+        max-width: 120px;
+    }
+    /******************** Hero Ends ****************/
+    /******************** Body Content Starts ****************/
+
+    .pp-body {
+        background-image: linear-gradient(to bottom, rgba(29, 31, 36, 0.8), rgba(29, 31, 36, 0.8)), url('../images/container-back.jpg');
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center;
+        padding: 60px 0
+    }
+
+    .pp-beer-block {
+        margin: 30px auto 10px;
+        box-shadow: 0 3px 8px rgba(203, 203, 203, 0.1);
+        color: #5E657C;
+        border: none;
+        position: relative;
+        background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .pp-beer-block:hover {
+        transform: scale(1.1);
+        transition: all 0.2s ease-in-out;
+        background-color: #000
+    }
+
+    .pp-img-section {
+        padding: 10px
+    }
+
+    .pp-img {
+        height: 320px;
+    }
+
+    .pp-img img {
+        margin: auto;
+        height: 100%
+    }
+
+    .pp-description {
+        background-color: #000000;
+        color: #ffffff;
+        padding: 8px 5px;
+        text-align: center
+    }
+
+    .pp-description h2 {
+        margin: 0;
+        font-size: 16px;
+        line-height: 18px;
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-weight: bold;
+    font-family: 'Kaushan Script', cursive;
+    }
+
+    .pp-description h5 {
+        overflow: hidden;
+        text-overflow: ellipsis;
+        white-space: nowrap;
+        font-size: 12px;
+
+    }
+
+    @media screen and (max-width:767px) {
+        .pp-hero .form-group .form-control {
+            width: 90%
+        }
+        .pp-hero .form-group .btn {
+            width: 90%;
+            height: 40px;
+            max-width: 90%;
+            margin-top: 12px;
+        }
+
+
+        .card {
+      margin: 2rem;
+    }
+
+    .card-body {
+      color: rgba(0, 0, 0, 0.9);
+    }
+
+    #error {
+      text-align: center;
+    }
+
+
+
+
+    #itemCount {
+  position: relative;
+  display: none;
+  top: -27px;
+  left: 105px;
+  width: 20px;
+  height: 20px;
+  border-radius: 50%;
+  
+  color: white;
+  text-align: center;
+
+}
